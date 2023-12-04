@@ -6,7 +6,6 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/apsolut/documentation-helper',
   },
-  
   docsRepositoryBase: 'https://github.com/apsolut/documentation-helper',
   footer: {
     text: 'Helpers',
