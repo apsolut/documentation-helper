@@ -11,7 +11,7 @@ const config: DocsThemeConfig = {
     text: 'Helpers',
   },
   sidebar: {
-    defaultMenuCollapseLevel: 2,
+    defaultMenuCollapseLevel: 1,
   },
 }
 
