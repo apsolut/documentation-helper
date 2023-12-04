@@ -1,5 +1,14 @@
 {
   "index": "Introduction",
+  "chrome": "Chrome",
+  "css": "CSS",
+  "ddev": "DDEV",
+  "debugging": "Debugging",
+  "docker": "Docker",
+  "gatsby": "Gatsby",
+  "git": "GIT",
+  "gpt": "GPT",
+  "javascript": "JavaScript",
   "postman": "Postman",
   "about": {
     "title": "About",
