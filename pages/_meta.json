@@ -10,6 +10,7 @@
   "gpt": "GPT",
   "javascript": "JavaScript",
   "postman": "Postman",
+  "hubspot": "HubSpot",
   "about": {
     "title": "About",
     "type": "page"
