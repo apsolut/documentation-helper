@@ -11,6 +11,9 @@ const config: DocsThemeConfig = {
   footer: {
     text: 'Helpers',
   },
+  sidebar: {
+    defaultMenuCollapseLevel: 1, // here
+  },
 }
 
 export default config
