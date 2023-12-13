@@ -1,5 +1,6 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const config: DocsThemeConfig = {
   logo: <span>Helpers - Today I learned</span>,
