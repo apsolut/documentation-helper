@@ -1,7 +1,15 @@
 #### HubL Repeatable Fields
+- [Filters](https://developers.hubspot.com/docs/cms/hubl/filters)
 - [Module and theme fields](https://developers.hubspot.com/docs/cms/building-blocks/module-theme-fields)
-- [HubL variables & macros syntax](https://developers.hubspot.com/docs/cms/hubl/variables-macros-syntax)
 
+
+```js
+module.logo|length
+
+{% set services = ["Web design", "SEO", "Inbound Marketing", "PPC"] %} 
+{{ services|length }} // output 4
+
+```
 
 ```js
 {% set my_number = -53 %}
