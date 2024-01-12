@@ -15,7 +15,7 @@ const config: DocsThemeConfig = {
   },
   useNextSeoProps() {
     return {
-      titleTemplate: '%s – SWR'
+      titleTemplate: '%s – Aleksandar Perisic'
     }
   }
 }
