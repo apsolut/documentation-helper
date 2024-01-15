@@ -24,8 +24,8 @@
 ```
 
 
-```js
-// Module syntax
+```html
+<!-- Module syntax --> 
 {% module_block module "my_rich_text_module" path="/My Rich Text Field Module",
     label="My Rich Text Field Module"
         %}
@@ -34,15 +34,25 @@
 {% end_module_attribute %}
 {% end_module_block %}
 
+<!-- widget_block is deprecated, use module_block instead. --> 
+<!-- This example is only to explain what type_of_module  --> 
+<!-- was used for, for those with legacy code.   --> 
 
-// widget_block is deprecated, use module_block instead.
-// This example is only to explain what type_of_module 
-// was used for, for those with legacy code. 
 {% widget_block rich_text "my_rich_text_module" overrideable=True, label='My rich-text module'  %}
 {% widget_attribute "html" %}
-<h2>New Module</h2>
-<p>Add content here.</p>
+  <h2>New Module</h2>
+  <p>Add content here.</p>
 {% end_widget_attribute %}
 {% end_widget_block %}
 
+```    
+
+
+```html
+ {% icon
+name="{{ icons.item_icon.name }}"
+style="{{ icons.item_icon.type }}"
+unicode="{{ icons.item_icon.unicode }}"
+icon_set="{{ icons.item_icon.icon_set }}"
+%}
 ```    
