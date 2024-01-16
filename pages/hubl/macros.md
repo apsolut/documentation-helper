@@ -1,5 +1,5 @@
 #### HubL Macros
-- [AAA](AAA)
+- [Macros](https://developers.hubspot.com/docs/cms/hubl/variables-macros-syntax)
 
 
 ```js
@@ -18,7 +18,13 @@
 ```
 
 
-```js
+```html
+<!-- Macro -->
+{% macro footer(tag, footer_text) %}
+     <footer> <{{ tag }}>{{ footer_text }} </{{tag}}> </footer>
+{% endmacro %}
 
-
+<!-- Usage in other module-->
+{% from "custom/page/location/my_macros.html" import footer %}
+{{ footer("h2", "My footer info") }}
 ```    
