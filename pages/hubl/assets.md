@@ -3,9 +3,12 @@
 
 
 ```js
+CSS
 {{ require_css(get_assets_url("../css/main.css"))}}
-{{ require_css("https://fonts.googleapis.com/css?family=Merriweather:400,700|Lato:400,700&display=swap") }}
+{{ require_css("//fonts.googleapis.com/css?family=Sans:400,700display=swap") }}
+// JS
 {{ require_js(get_asset_url("../../js/main.js")) }}
+{{ require_js("//cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js") }} 
 ```
 
 
