@@ -15,11 +15,16 @@ https://ddev.readthedocs.io/en/latest/users/quickstart/#wordpress
 
 
 
+```sh
+    # Fritzbox Home Network > Network > Network Settings > DNS Rebind Protection
+    ddev.site
+```
+
 
 
 
 #### OLD 2022
-
+```sh
     // issues Win11 - resolve.conf gets rewrited
     // https://askubuntu.com/questions/1347712/make-etc-resolv-conf-changes-permanent-in-wsl-2
     sudo nano /etc/resolv.conf
@@ -27,3 +32,4 @@ https://ddev.readthedocs.io/en/latest/users/quickstart/#wordpress
     // no cache install plugin 
     ddev composer require wpackagist-plugin/all-in-one-video-gallery --no-cache
     ddev composer require wpackagist-plugin/fakerpress --no-cache
+```
