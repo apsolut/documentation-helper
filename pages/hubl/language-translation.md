@@ -5,8 +5,6 @@
 
 
 
-
-
 ```java
 
 {% if content.language.languageTag == "en" %}
