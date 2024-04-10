@@ -13,6 +13,15 @@ CSS
 
 
 ```js
+{% set featuredImage =  content.post_list_summary_featured_image  %}
+ {% set featuredImageURL =  resize_image_url(featuredImage, 0, 0, 360) %}
+ <img src="{{ featuredImageURL }}" alt="{{ content.title }}" class="img-responsive" />
+
+
+```
+
+
+```js
 // in modules, can enable JQ from Hubspot Dashboard
 {% require_js %}
 <script>
