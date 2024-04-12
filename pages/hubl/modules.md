@@ -17,3 +17,9 @@
 
 
 
+#### Modules
+- you can also hide HubSpot default modules in favor of your own versions. 
+[Hide modules and sections from the editor](https://developers.hubspot.com/docs/cms/building-blocks/themes/hide-modules-and-sections)
+
+
+
