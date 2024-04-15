@@ -1,6 +1,7 @@
 #### HubL Macros
 - [Macros](https://developers.hubspot.com/docs/cms/hubl/variables-macros-syntax)
-
+- [Atomic Theme](https://github.com/hubspotdev/DHUG/tree/main/atomic-theme-folder-structure/macros)
+- [Freshjuice Theme](https://github.com/freshjuice-dev/freshjuice-hubspot-theme)
 
 ```js
 {% macro rem(values) %}
