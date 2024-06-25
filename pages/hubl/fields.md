@@ -2,6 +2,19 @@
 - [Module and theme fields](https://developers.hubspot.com/docs/cms/building-blocks/module-theme-fields#repeaters)
 
 
+```js
+/// Image
+/// https://developers.hubspot.com/docs/cms/hubl/functions
+/// {{ resize_image_url("http://your.hubspot.site/hubfs/img.jpg", 0, 0, 300) }}
+
+{% set featuredImage =  content.post_list_summary_featured_image  %} 
+{% set featuredImageURL =  resize_image_url(featuredImage, 0, 0, 360) %} 
+
+<img src="{{ featuredImageURL }}" alt="{{ content.title }}" class="img-responsive" /> 
+
+
+```
+
 
 ```js
 // video
