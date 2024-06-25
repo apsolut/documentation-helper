@@ -1,5 +1,6 @@
 #### HubL Functions
 - [Functions](https://developers.hubspot.com/docs/cms/hubl/functions)
+- [Filters](https://developers.hubspot.com/docs/cms/hubl/filters)
 - [Module and theme fields](https://developers.hubspot.com/docs/cms/building-blocks/module-theme-fields)
 
 
