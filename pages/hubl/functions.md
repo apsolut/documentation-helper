@@ -24,14 +24,25 @@
 
 ```js
 /// link
+/// please escape everything that we can 
 {{ content.absolute_url }}
+
+{% set escape_string = "https://www.google.com<" %}
+ <a href="{{ escape_string|escape_url }}">
+
 ```
 
 
 ```js
  /// blog content
+ /// sanitize HTML when possible
    {{ content.post_body_value|truncatehtml(200) }}
    {{ content.post_list_content|truncatehtml(100) }}
+   /// safe - wont be escaped
+   {{ content.post_list_content|safe }} 
+   /// sanitize
+   {% set escape_string = "This <br> <div>markup is <img src='test.com/image'> <span>printed</span> as text.</div>" %}
+{{ escape_string|sanitize_html("IMAGES") }}
 ```
 
 
