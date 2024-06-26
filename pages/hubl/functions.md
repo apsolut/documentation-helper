@@ -10,6 +10,14 @@
 <a href="{{ blog_page_link(next_page_num) }}">Next</a>
 ```
 
+```js
+/// Translations
+ {% if content.language.languageTag == "de" %}
+    <a class="cta_button" href="{{ post.absolute_url }}">Mehr erfahren</a>
+{% else %}
+    <a class="cta_button" href="{{ post.absolute_url }}">Read More</a>
+{% endif %}
+```
 
 ```js
 
