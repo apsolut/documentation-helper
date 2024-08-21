@@ -1,4 +1,4 @@
-#### HubL Assets
+#### Search resource
 [Search with groupId](https://community.hubspot.com/t5/CMS-Development/Site-Search-withing-a-specific-blog-only/m-p/603352)
 [Search with pathPrefix](https://community.hubspot.com/t5/CMS-Development/Setting-up-a-content-search-bar-for-one-blog/m-p/438739)
 
