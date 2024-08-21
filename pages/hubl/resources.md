@@ -19,6 +19,15 @@
 <p>{{ content.slug }}</p>
 ```
 
+```js
+// redirect
+{% if page_topics == 'product' %}
+<meta name="checker" content="blog-template-tag-product">
+{% endif %}
+```
+
+
+
 
 ```js
 
