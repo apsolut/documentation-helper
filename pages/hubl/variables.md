@@ -3,6 +3,16 @@
 
 
 ```js
+// define
+{# Setup the uniqueID that will work in all cases - even with drag-and-drop elements  #}
+{% set uniqueID = name|replace("-", "_") %}
+// usage
+{{uniqueID}}
+
+```
+
+
+```js
 <section id={{name}} class="generic-module-class">
    {# module does cool stuff here #}
 </section>
