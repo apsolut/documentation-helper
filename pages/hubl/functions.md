@@ -20,6 +20,40 @@
 ```
 
 ```js
+// Reading Time
+{% set number = p.post_body|wordcount|divide(200) %}
+{% if number < 1 %}
+        <span></span>
+    {% else %}
+        <div class="aa-tag-separator">| </div>
+        {% set post_content = content.post_body|striptags %}
+        {% set cleaned_content = post_content|replace('<!--more-->', '') %}
+        {% set word_count = cleaned_content|wordcount %}
+        {% set calculated_time = word_count|divide(200)|round %}
+        {# Workaround for max function #}
+        {% if calculated_time < 1 %}
+            {% set reading_time = 1 %}
+        {% else %}
+            {% set reading_time = calculated_time %}
+        {% endif %}
+            <div id="reading-time-debug" style="display: none;">
+            <p>Debug Info:</p>
+            <ul>
+                <li>Word Count: {{ word_count }}</li>
+                <li>Calculated Time: {{ calculated_time }}</li>
+                <li>Final Reading Time: {{ reading_time }}</li>
+            </ul>
+        </div>
+        {# <!-- Debug: {{ word_count }} words --> #}
+        {#  <span class="min-read">{{ p.post_body|wordcount|divide(200) }} {{ label_read }}</span> #}
+        <span class="min-read">{{ reading_time  }} {{ label_read }}</span>
+{% endif %}
+
+
+```
+
+
+```js
 
 {% set my_blog = blog_by_id(47104297) %}
 <ul>
