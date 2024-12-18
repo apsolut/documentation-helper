@@ -14,6 +14,15 @@
 
 
 ```js
+
+ {% unless item.show_video and item.hide_background_gradient %}
+ 
+ {% endunless %}
+
+```
+
+
+```js
 // else if
 {% set number = 5 %}
 
