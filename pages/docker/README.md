@@ -7,3 +7,5 @@
     // check do you have internet in docker: ping google.com
     // $ cd etc/ 
     sudo nano resolv.conf   // nameserver 1.1.1.1
+
+
