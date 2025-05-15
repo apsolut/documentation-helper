@@ -1,25 +1,27 @@
-### Classic SSH
+### Web Vitals 
 
+
+
+
+#### HubSpot
 
 ```shell
-  # get aggent 
-  eval "$(ssh-agent -s)"
-  # add agent key
-  ssh-add ~/.ssh/ubuntu33
-  # run python 
-  python3 app.py
+{# Optimize for futue in new theme load from single place #} 
+{{ require_js("https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js", { position: "footer", defer: true }) }}
+{{ require_css("//cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.css", { async: true }) }}
 
 ```
 
-```sh 
-# unzip 
-unzip file.zip
-unzip file.zip -d destination_folder
-unzip backup.zip -d ~/public
+```javascript 
+ "css_render_options": {
+    "async": true
+  }
 ```
 
-
-```sh 
-# zip folder
-zip -r filename.zip foldername/
+```javascript
+ "js_render_options": {
+    "position": "footer",
+    "defer": true,
+    "async": false
+  }
 ```
