@@ -1,5 +1,8 @@
 ### WebVitals
 
+- [Configuring a module](https://developers.hubspot.de/docs/reference/cms/modules/configuration)
+
+
 
 ```shell
 {{ require_js("https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js", { position: "footer", defer: true }) }}
