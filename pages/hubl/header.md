@@ -21,3 +21,12 @@
 
 
 ```
+
+
+```js
+
+{% if request.query_dict.hs_preview %}
+  <p>You're viewing this in preview mode.</p>
+{% endif %}
+
+```
